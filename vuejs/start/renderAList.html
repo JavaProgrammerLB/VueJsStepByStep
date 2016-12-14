@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <ul>
+                <li v-for="todo in todos">
+                    {{ todo.text }}
+                <li>
+            </ul>
+        </div>
+        <script>
+            new Vue({
+                el: '#app',
+                data:{
+                    todos:[
+                        { text: 'Learn JavaScript' },
+                        { text: 'Lean Vue.js' },
+                        { text: 'Build Something Awesome' }
+                    ]
+                }
+            })
+        </script>
+    </body>
+</html>
