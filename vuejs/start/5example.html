@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="example-1">
+            Hello {{ name }}!
+        </div>
+        <script>
+            var exampleData = {
+                name: 'Vue.js'
+            }
+
+            var exampleVM = new Vue({
+                el: '#example-1',
+                data: exampleData
+            })
+        </script>
+    </body>
+</html>
